@@ -34,5 +34,5 @@
 ?> // Ej nödvändigt att avslut "ren" php med ?>
 ````
 ### .env
-    Skapa filen ".env" med 
+    Skapa filen ".env" med root-lösenordet till MariaDB
     PASSWORD=xxxxxxx
