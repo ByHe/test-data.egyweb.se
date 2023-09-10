@@ -34,8 +34,12 @@
 ````
 ### .env
     Byt namn på filen ".env-rename" till ".env". 
-    Skriv in önskat lösenord till MariaDB och portnummret till appen.
+    Skriv in önskat portnummret till appen.
+    För MariaDB lösenord och användarnamn till database
 
-    PASSWORD=<lösenord till mariadb>
     PORT=<port till appen>
+    PASSWORD=<lösenord till mariadb>
+    USER=<användarnamn till databasen nedan>
+    DATABASE=<Databasens namn till användaren ovan>
+    
     
