@@ -33,13 +33,11 @@ services:
       - MYSQL_USER=pma
       - MYSQL_PASSWORD=${PASSWORD}
 
-  phpmyadmin:
+  pma:
     image: phpmyadmin/phpmyadmin:latest
     container_name: pma
     restart: always
     environment:
       PMA_HOST: mariadb
-    ports:
-      - "8081:80"
     depends_on:
       - mariadb
