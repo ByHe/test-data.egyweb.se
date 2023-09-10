@@ -1,6 +1,6 @@
 .DS_Store
 
-wwww/nodejs/node_modules/*
+**/node_modules
 
 db/*
 !db/.gitkeep
