@@ -1,10 +1,9 @@
 ## Docker-compose LEMP
 ### Inkluderar
-- nginx -> localhost:80
+- nginx
 - php   
-- mariadb -> mariadb
-- phpmyadmin -> localhost:8080
-- composer
+- mariadb
+- phpmyadmin
 
 ### HowTo
 
@@ -15,9 +14,9 @@
 ##### Stoppa servern (containern) med
     docker-compose down
 ##### Serverns url
-    localhost:1001
+    localhost:<PORT i .env>
 ##### phpmyadmin (pma)
-    localhost:1001/pma
+    localhost:<PORT>/pma
 ##### Anslut till MariaDB med php
 
 ````php
@@ -36,7 +35,7 @@
 ### .env
     Byt namn på filen ".env-rename" till ".env". 
     Skriv in önskat lösenord till MariaDB och portnummret till appen.
-    
+
     PASSWORD=<lösenord till mariadb>
     PORT=<port till appen>
     
