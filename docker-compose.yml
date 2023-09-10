@@ -5,7 +5,7 @@ services:
     container_name: nginx
     restart: always
     ports:
-      - 1001:80 
+      - ${PORT}:80 
     volumes:
       - ./www/public:/var/www/public
       - ./config/nginx/nginx.conf:/etc/nginx/nginx.conf

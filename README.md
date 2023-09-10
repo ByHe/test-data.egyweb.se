@@ -34,5 +34,9 @@
 ?> // Ej nödvändigt att avslut "ren" php med ?>
 ````
 ### .env
-    Skapa filen ".env" med root-lösenordet till MariaDB
-    PASSWORD=xxxxxxx
+    Byt namn på filen ".env-rename" till ".env". 
+    Skriv in önskat lösenord till MariaDB och portnummret till appen.
+    
+    PASSWORD=<lösenord till mariadb>
+    PORT=<port till appen>
+    
