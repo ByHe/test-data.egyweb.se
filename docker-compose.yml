@@ -37,6 +37,8 @@ services:
     image: phpmyadmin/phpmyadmin:latest
     container_name: pma
     restart: always
+    volumes:
+      - ./config/pma/config.inc.php:/etc/phpmyadmin/config.inc.php
     environment:
       PMA_HOST: mariadb
     depends_on:
