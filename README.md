@@ -15,16 +15,16 @@
 ##### Stoppa servern (containern) med
     docker-compose down
 ##### Serverns url
-    localhost
-##### phpmyadmin
-    localhost:8080
+    localhost:1001
+##### phpmyadmin (pma)
+    localhost:1001/pma
 ##### Anslut till MariaDB med php
 
 ````php
 <?php
     // Definierar konstanter med användarinformation.
     define ('DB_USER', 'userName'); // Användare i MariaDB
-    define ('DB_PASSWORD', '12345');
+    define ('DB_PASSWORD', '12345'); // Byt lösenord
     define ('DB_HOST', 'mariadb');
     define ('DB_NAME', 'dbName');   // Databasen som anslutning skall ske till
 
