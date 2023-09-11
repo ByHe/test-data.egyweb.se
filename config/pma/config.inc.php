@@ -159,3 +159,6 @@ if (isset($_ENV['MEMORY_LIMIT'])) {
 if (file_exists('/etc/phpmyadmin/config.user.inc.php')) {
     include '/etc/phpmyadmin/config.user.inc.php';
 }
+
+/** Fix for: #1231 - Variable 'lc_messages' can't be set to the value of 'sv_SE' */
+$cfg['Lang'] = 'en';
