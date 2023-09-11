@@ -5,7 +5,7 @@ services:
     container_name: nginx
     restart: always
     ports:
-      - ${PORT}:80 
+      - ${PORT:-80}:80 
     volumes:
       - ./www/public:/var/www/public
       - ./config/nginx/nginx.conf:/etc/nginx/nginx.conf
@@ -28,10 +28,10 @@ services:
       - ./db:/var/lib/mysql
       - ./config/mysql/my.cnf:/etc/mysql/my.cnf
     environment:
-      - MYSQL_ROOT_PASSWORD=${PASSWORD}
-      - MYSQL_DATABASE=${DATABASE}
-      - MYSQL_USER=${USER}
-      - MYSQL_PASSWORD=${PASSWORD}
+      - MYSQL_ROOT_PASSWORD=${PASSWORD:-12345}
+      - MYSQL_DATABASE=${DATABASE:-mydb}
+      - MYSQL_USER=${USER:-pma}
+      - MYSQL_PASSWORD=${PASSWORD:-12345}
 
   pma:
     image: phpmyadmin/phpmyadmin:latest
